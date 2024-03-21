@@ -9,8 +9,6 @@ import 'package:sellersapp/home_screen/main_screen.dart';
 import 'package:sellersapp/models/items.dart';
 import 'package:sellersapp/widgets/simple-app-bar.dart';
 
-import 'main-screen.dart';
-
 class ItemDetailsScreen extends StatefulWidget {
   final Items? model;
   const ItemDetailsScreen({super.key, this.model});

@@ -17,7 +17,10 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      return web;
+      throw UnsupportedError(
+        'DefaultFirebaseOptions have not been configured for web - '
+        'you can reconfigure this by running the FlutterFire CLI again.',
+      );
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -25,7 +28,10 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -43,39 +49,21 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBKLPSDe8-OcMtv25Zy0yqzyRi1Ac76VfU',
-    appId: '1:361129179339:web:72108bf17e31146ac1034e',
-    messagingSenderId: '361129179339',
-    projectId: 'sellersapp-e5619',
-    authDomain: 'sellersapp-e5619.firebaseapp.com',
-    storageBucket: 'sellersapp-e5619.appspot.com',
-    measurementId: 'G-JQW83J52MB',
-  );
-
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDAU__sRleBl5zcmZU3Qbb8naYob8Zrnkk',
-    appId: '1:361129179339:android:31d78bc810df33f5c1034e',
-    messagingSenderId: '361129179339',
-    projectId: 'sellersapp-e5619',
-    storageBucket: 'sellersapp-e5619.appspot.com',
+    apiKey: 'AIzaSyDAJiOSqSI-FjtqYoJsB6rhfOFcvo7FdQ4',
+    appId: '1:441542277737:android:5c22a44f9fe52e7deec0f8',
+    messagingSenderId: '441542277737',
+    projectId: 'foodies-859a3',
+    storageBucket: 'foodies-859a3.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCbSyYyfeXmUjZt1tpveWCg1OQO3l2JIT8',
-    appId: '1:361129179339:ios:043403ebef035d7dc1034e',
-    messagingSenderId: '361129179339',
-    projectId: 'sellersapp-e5619',
-    storageBucket: 'sellersapp-e5619.appspot.com',
-    iosBundleId: 'com.example.sellersapp',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCbSyYyfeXmUjZt1tpveWCg1OQO3l2JIT8',
-    appId: '1:361129179339:ios:8bfe0bbe3ccf3253c1034e',
-    messagingSenderId: '361129179339',
-    projectId: 'sellersapp-e5619',
-    storageBucket: 'sellersapp-e5619.appspot.com',
-    iosBundleId: 'com.example.sellersapp.RunnerTests',
+    apiKey: 'AIzaSyCnGZH2ut0leA6parFSUc2QpVJw7wPT8Rk',
+    appId: '1:441542277737:ios:9363f71189ddf791eec0f8',
+    messagingSenderId: '441542277737',
+    projectId: 'foodies-859a3',
+    storageBucket: 'foodies-859a3.appspot.com',
+    iosClientId: '441542277737-68cqo0j6amhqu7o1sbtv235kf9hicvk7.apps.googleusercontent.com',
+    iosBundleId: 'com.example.sellersappp',
   );
 }
