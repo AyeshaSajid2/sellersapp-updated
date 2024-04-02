@@ -1,3 +1,4 @@
+//ignore: file_names
 // ignore: file_names
 // ignore: file_names
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -7,6 +8,8 @@ import 'package:sellersapp/global/global.dart';
 import 'package:sellersapp/home_screen/main_screen.dart';
 import 'package:sellersapp/models/items.dart';
 import 'package:sellersapp/widgets/simple-app-bar.dart';
+
+import 'main-screen.dart';
 
 class ItemDetailsScreen extends StatefulWidget {
   final Items? model;
@@ -37,6 +40,8 @@ class _ItemDetailsScreenState extends State<ItemDetailsScreen> {
       Fluttertoast.showToast(msg: "Item Deleted Successfully.");
     });
   }
+
+//ignore_for_file: library_private_types_in_public_api, file_names, duplicate_ignore
 
   @override
   Widget build(BuildContext context) {

@@ -8,6 +8,8 @@ import 'package:sellersapp/home_screen/main_screen.dart';
 import 'package:sellersapp/widgets/error_dialog.dart';
 import 'package:sellersapp/widgets/loading_dialogue.dart';
 
+import '../home_screen/main-screen.dart';
+
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 

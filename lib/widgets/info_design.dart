@@ -47,6 +47,7 @@ class _InfoDesignWidgetState extends State<InfoDesignWidget> {
       splashColor: Colors.amber,
       child: Padding(
         padding: const EdgeInsets.all(5.0),
+        // ignore: sized_box_for_whitespace
         child: Container(
           height: 280,
           width: MediaQuery.of(context).size.width,

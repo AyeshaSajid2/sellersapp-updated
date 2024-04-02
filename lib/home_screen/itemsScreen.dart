@@ -1,7 +1,9 @@
+// ignore: duplicate_ignore
 // ignore: file_names
 
+// ignore: duplicate_ignore
 // ignore: file_names
-// ignore_for_file: use_key_in_widget_constructors, prefer_interpolation_to_compose_strings
+// ignore_for_file: use_key_in_widget_constructors, prefer_interpolation_to_compose_strings, file_names
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';

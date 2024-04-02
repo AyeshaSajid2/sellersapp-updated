@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:sellersapp/authentication/auth_screen.dart';
 import 'package:sellersapp/global/global.dart';
+import 'package:sellersapp/home_screen/history-screen.dart';
+
+import '../home_screen/new-orders-screen.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -80,7 +83,9 @@ class MyDrawer extends StatelessWidget {
                     "My Orders",
                     style: TextStyle(color: Colors.black),
                   ),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (c) => NewOrdersScreen()));
+                  },
                 ),
                 const Divider(
                   height: 10,
@@ -96,7 +101,9 @@ class MyDrawer extends StatelessWidget {
                     "History",
                     style: TextStyle(color: Colors.black),
                   ),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (c) => HistoryScreen()));
+                  },
                 ),
                 const Divider(
                   height: 10,
